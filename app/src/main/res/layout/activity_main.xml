@@ -8,11 +8,12 @@
     android:orientation="vertical">
 
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:background="@color/light_grey">
+        android:background="@color/grey">
 
 
 
@@ -21,8 +22,8 @@
             android:id="@+id/close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
             android:src="@drawable/close" />
 
         <TextView
@@ -33,8 +34,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_toRightOf="@+id/close"
             android:gravity="right"
             android:text="clear"
@@ -47,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:background="@color/light_grey">
+        android:background="@color/grey">
 
 
         <TextView
@@ -56,15 +57,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="322dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="10dp"
             android:gravity="left"
             android:text="Wed"
-            android:textSize="25dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/texto_dia2"
@@ -72,15 +73,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="9dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="10dp"
             android:gravity="left"
             android:text="Sat"
-            android:textSize="25dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
 
         <TextView
@@ -90,15 +91,14 @@
             android:layout_alignTop="@+id/texto_dia1"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="5dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="46dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="312dp"
-            android:layout_marginBottom="50dp"
             android:gravity="left"
             android:text="13 Oct"
-            android:textSize="20dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/texto_fecha2"
@@ -109,44 +109,410 @@
             android:layout_alignParentEnd="true"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="46dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="-1dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="5dp"
             android:gravity="right"
             android:text="15 Oct"
-            android:textSize="20dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tablasemana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:background="@color/grey">
+
+        <TableRow
+            android:id="@+id/tabla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="S"
+                android:textColor="@color/red"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/dia2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="M"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dia3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="T"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dia4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="W"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dia5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="T"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dia6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="F"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dia7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="S"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:text="October"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
     </RelativeLayout>
 
 
     <TableLayout
-        android:id="@+id/tablasemana"
+        android:id="@+id/tabla_calendario"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:shrinkColumns="7"
-        android:stretchColumns=",">
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
 
         <TableRow
-            android:id="@+id/tabla"
+        android:id="@+id/tabla_semana1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dip">
+            android:padding="15dp"
+            android:layout_column="5"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="20dp" />
 
-
+    </TableRow>
+        <TableRow
+            android:id="@+id/tabla_semana2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/semana"
-                android:text=" S  M  T  W  T  F  S "
-                android:textColor="@color/red" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="5"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="6"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="8"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="9"
+                android:textSize="20dp" />
+
         </TableRow>
+        <TableRow
+            android:id="@+id/tabla_semana3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="10"
+                android:textSize="20dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="11"
+                android:textSize="20dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="12"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="13"
+                android:textSize="20dp"
+                android:textColor="@color/light_grey"
+                android:background="@color/dark_red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="14"
+                android:textSize="20dp"
+                android:textColor="@color/light_grey"
+                android:background="@color/dark_red"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="15"
+                android:textSize="20dp"
+                android:textColor="@color/light_grey"
+                android:background="@color/dark_red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="16"
+                android:textSize="20dp"
+                android:textColor="@color/light_grey"
+                android:background="@color/dark_red"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tabla_semana4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="17"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="18"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="19"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="20"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="21"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="22"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="23"
+                android:textSize="20dp" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tabla_semana5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="24"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="25"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="26"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="27"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="28"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="29"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:text="30"
+                android:textSize="20dp" />
+        </TableRow>
     </TableLayout>
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textColor="@color/light_grey"
+        android:background="@color/red"/>
 
 
 

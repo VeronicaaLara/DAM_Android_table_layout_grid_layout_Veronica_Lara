@@ -9,12 +9,6 @@
 
 
 
-        <item name="light_grey">@color/light_grey</item>
-        <item name="black">@color/black</item>
-
-        <item name="dark_red">@color/dark_red</item>
-        <item name="red">@color/red</item>
-
 
     </style>
 
